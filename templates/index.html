@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triglycerides Prediction</title>
+</head>
+<body>
+    <div>
+        <h2>Triglycerides Level Prediction</h2>
+        <form action="/predict" method="post">
+            <label for="bad_cholestrol_lvl">Bad Cholesterol Level:</label>
+            <input type="number" id="bad_cholestrol_lvl" name="bad_cholestrol_lvl"><br><br>
+            
+            <label for="total_cholestrol">Total Cholesterol:</label>
+            <input type="number" id="total_cholestrol" name="total_cholestrol"><br><br>
+            
+            <label for="good_cholestrol_lvl">Good Cholesterol Level:</label>
+            <input type="number" id="good_cholestrol_lvl" name="good_cholestrol_lvl"><br><br>
+            
+            <input type="submit" value="Predict">
+        </form>
+        <h3>{{ prediction_text }}</h3>
+    </div>
+</body>
+</html>

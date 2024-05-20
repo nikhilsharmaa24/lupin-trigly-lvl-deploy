@@ -7,8 +7,8 @@ import joblib
 import pickle
 
 # Load the data
-df_train = pd.read_csv('D:/Nikhil/hackathon/lupin/dataset/train.csv')
-df_test = pd.read_csv('D:/Nikhil/hackathon/lupin/dataset/test.csv')
+df_train = pd.read_csv('./lupin/dataset/train.csv')
+df_test = pd.read_csv('./lupin/dataset/test.csv')
 
 # Drop the candidate_id column
 df_train = df_train.drop(columns=['candidate_id'])
